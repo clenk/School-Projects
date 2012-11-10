@@ -1,0 +1,11 @@
+Pairs of snakes at start = 1
+Months = 10
+Population = 89
+
+Pairs of snakes at start = 6
+Months = 20
+Population = 10946
+
+Pairs of snakes at start = 10
+Months = 30
+Population = 1346269

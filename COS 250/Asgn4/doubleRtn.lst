@@ -1,0 +1,35 @@
+     Assembly listing for: doubleRtn.mas
+                Assembled: Sat Mar 10 13:34:44 EST 2012
+
+         |         ORG 100           
+100 1109 |         LOAD x            
+101 210B |         STORE tmp         
+102 010C |         JNS subr          
+103 2109 |         STORE x           
+104 110A |         LOAD y            
+105 210B |         STORE tmp         
+106 010C |         JNS subr          
+107 210A |         STORE y           
+108 7000 |         HALT              
+109 0014 |  x      DEC 20            
+10A 0030 |  y      DEC 48            
+10B 0000 |  tmp    DEC 0             
+10C 0000 |  subr   HEX 0             
+10D 110B |         LOAD tmp          
+10E 310B |         ADD tmp           
+10F C10C |         JUMPI subr        
+         |         END               
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          subr   |   10C   | 102, 106, 10F
+          tmp    |   10B   | 101, 105, 10D, 10E
+          x      |   109   | 100, 103
+          y      |   10A   | 104, 107
+         --------------------------------------------------
+
+

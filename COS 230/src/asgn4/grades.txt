@@ -1,0 +1,32 @@
+Grade for Asg4 - Dictionary
+Chris Lenk 
+Overall most excellent, the delete works, the splay tree
+works, the code is nicely readable.
+
+Doing a find on a word which is not in the dictionary
+causes the program to blow up.  I did not remove points
+but its not good.
+
+Good coding style, including indentation, comments, 
+and variable name                            05/05
+Binary Search Tree Implementation            30/30       
+Choose One or More Ways to Extend BST                                                                             
+    Red / Black Tree Implementation      
+    AVL Tree                             
+    Splay Tree                               20/20
+Implement Commands                           35/35
+Command line arguments                       05/05
+--------------------------------------------------
+Total points 95
+Delete from BST +10
+Delete from Splay +10
+
+Multiple definitions for the same word does not work -10
+Total 105 points
+
+==============================================
+Christopher's notes: 
+
+did have multi-defs, just didnt print them on find [word] (they show up in the "tree" command)
+
+search() returns null if node not found, but I forgot to check for null where it gets returned to

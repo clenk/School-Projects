@@ -1,0 +1,31 @@
+org 100
+	load addr
+	store next
+	load num
+	subt one
+	store ctr
+loop, 	load sum
+	addi next
+	store sum
+	load next
+	add one
+	store next
+	load ctr
+	subt one
+	store ctr
+	skipcond 000
+	jump loop
+	load sum
+	output
+stop,	halt
+addr,	hex 119
+next,	hex 0
+num,	dec 5
+sum, 	dec 0
+ctr, 	hex 0
+one, 	dec 1
+	dec 10
+	dec 15
+	dec 20
+	dec 25
+	dec 30

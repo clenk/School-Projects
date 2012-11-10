@@ -1,0 +1,11 @@
+Assembly listing for: add2numbers.lst.mas
+Assembled on: Tue Apr 24 18:37:59 2012
+
+           |           | ORG 100
+100 | 1    |           | load 104
+101 | 3    |           | add 105
+102 | 2    |           | store 106
+103 | 7000 |           | halt 
+104 |  |           | dec 0023
+105 |  |           | hex FFE0
+106 |  |           | hex 0000

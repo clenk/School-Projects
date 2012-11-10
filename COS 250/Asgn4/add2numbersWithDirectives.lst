@@ -1,0 +1,17 @@
+Assembly listing for: add2numbersWithDirectives.mas
+Assembled on: Tue May  1 12:47:26 2012
+
+           |          | ORG 100
+100 | 1104 |          | load X
+101 | 3105 |          | add Y
+102 | 2104 |          | store X
+103 | 7000 |          | halt 
+104 | 0023 |        X | dec 0023
+105 | FFE0 |        Y | hex FFE0
+106 |      |          | END
+SYMBOL TABLE
+-----------------------------------------------
+ Symbol   | Value | Defined | References 
+-----------------------------------------------
+        X | 0023  | 104     | 100, 102, 
+        Y | FFE0  | 105     | 101, 

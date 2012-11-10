@@ -1,0 +1,9 @@
+org 100
+load X
+add Y
+store X
+halt
+X, dec 0023
+Y, hex FFE0
+end
+Z, hex 0000

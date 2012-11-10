@@ -1,0 +1,27 @@
+Assembly listing for: add2numbers.mas
+Assembled on: Tue May  1 12:57:23 2012
+
+           |          | ORG 100
+100 | 1104 |          | load 104
+101 | 3
+Could not find given address: 205!
+ |          | add 205
+102 | 2106 |          | store 106
+103 | 7000 |          | halt 
+104 | 0023 |          | dec 0023
+105 | FFE0 |          | hex FFE0
+106 | 0000 |          | hex 0000
+107 | 0117 |          | dec 0117
+108 | 0132 |          | dec 0132
+109 | 00AC |          | hex 00AC
+
+SYMBOL TABLE
+-----------------------------------------------
+ Symbol   | Value | Defined | References 
+-----------------------------------------------
+          | 0023  | 104     | 100, 
+          | FFE0  | 105     | 
+          | 0000  | 106     | 102, 
+          | 0117  | 107     | 
+          | 0132  | 108     | 
+          | 00AC  | 109     | 

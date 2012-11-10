@@ -1,0 +1,12 @@
+137107 Sorting and Searching 57
+791798 Effective Java 12
+972781 Starting out with Java 5 37
+981812 Data Structures and Algorithms in Java 31
+789902 Programming Style 3
+891939 Ponters on C 27
+998811 Unix Programming Environment 13
+897988 Design Patterns 30
+987766 C Programming Language 7
+798917 Science and Grace 33
+081899 A Long Walk to Church 10
+890817 Principles of Programming 14

@@ -1,0 +1,15 @@
+What is the Big O that describes the worst performance of the shuttle sort in terms of n numbers?
+
+1 + 2 + 3 + ... + N-1 = N*(N-1)/2
+which can be simplified to:
+Big O (N^2)
+
+
+Normally sort algorithms are described in terms of their average performance.  What factor makes it difficult to provide an equation for the average performance of the shuttle sort?
+
+You can't know how long the algorithm will have to go on each pass before it reaches a pair of numbers that don't need to be swapped. It might need to swap all of the numbers, or it might not need to swap any at all.
+
+
+How does this compare to the other sorts (Bubble, Select, Insertion) we discussed?
+
+The Big O for Shuttle Sort is approximately the same as that for the other simple sorts we've looked at. There are slight differences, but these become negligible when the number of things to be sorted becomes larger.

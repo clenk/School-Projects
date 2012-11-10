@@ -1,0 +1,15 @@
+//bad input answer should be -1, 10, 20-30
+
+
+
+   aaaa   bbb
+//another comment
+
+2 4 6 
+2 a 6
+10 10
+
+30 20
+- 10
+-1
+nbnb

@@ -1,0 +1,24 @@
+Atlanta Chattanooga 100
+Chattanooga Knoxville 120
+Knoxville Nashville 100
+Nashville Huntsville 99
+Atlanta Macon 50
+Knoxville Chattanooga 120
+Chattanooga Huntsville 70
+Macon Atlanta 50
+Start Macon
+End Knoxville
+End Huntsville
+Start Nashville
+End Knoxville
+End Huntsville
+Atlanta Columbia 118
+Columbia Charleston 112
+Charleston Savannah 44
+Savannah Macon 89
+Charleston Columbia 112
+Columbia Atlanta 118
+Start Nashville 
+End Charleston
+End Savannah
+End Knoxville

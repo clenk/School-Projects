@@ -1,0 +1,53 @@
+Assembly listing for: add5numbers.mas
+Assembled on: Tue May  1 13:15:06 2012
+
+           |          | ORG 100
+100 | 1113 |          | load addr
+101 | 2114 |          | store next
+102 | 1115 |          | load num
+103 | 4118 |          | subt one
+104 | 2117 |          | store ctr
+105 | 1116 |     loop | load sum
+106 | B114 |          | addi next
+107 | 2116 |          | store sum
+108 | 1114 |          | load next
+109 | 3118 |          | add one
+10A | 2114 |          | store next
+10B | 1117 |          | load ctr
+10C | 4118 |          | subt one
+10D | 2117 |          | store ctr
+10E | 8000 |          | skipcond 000
+10F | 9105 |          | jump loop
+110 | 1116 |          | load sum
+111 | 6000 |          | output 
+112 | 
+Error: Instruction not found!
+ |          | stop, halt
+113 | 0119 |     addr | hex 119
+114 | 0000 |     next | hex 0
+115 | 0005 |      num | dec 5
+116 | 0000 |      sum | dec 0
+117 | 0000 |      ctr | hex 0
+118 | 0001 |      one | dec 1
+119 | 0010 |          | dec 10
+11A | 0015 |          | dec 15
+11B | 0020 |          | dec 20
+11C | 0025 |          | dec 25
+11D | 0030 |          | dec 30
+
+SYMBOL TABLE
+-----------------------------------------------
+ Symbol   | Value | Defined | References 
+-----------------------------------------------
+     loop |       | 105     | 10F, 
+     addr | 0119  | 113     | 100, 
+     next | 0000  | 114     | 101, 106, 108, 10A, 
+      num | 0005  | 115     | 102, 
+      sum | 0000  | 116     | 105, 107, 110, 
+      ctr | 0000  | 117     | 104, 10B, 10D, 
+      one | 0001  | 118     | 103, 109, 10C, 
+          | 0010  | 119     | 
+          | 0015  | 11A     | 
+          | 0020  | 11B     | 
+          | 0025  | 11C     | 
+          | 0030  | 11D     | 

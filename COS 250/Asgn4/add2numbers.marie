@@ -1,0 +1,13 @@
+org 100
+load 104
+add 105
+store 106
+halt
+
+
+dec 0023
+hex FFE0
+hex 0000
+dec 0117
+dec 0132
+hex 00AC

@@ -1,0 +1,180 @@
+Sky
+color .04 .4 .65
+
+Sphere
+center 0 0 2
+radius .5
+color 0 0 0
+specular 1 1 1
+
+Floor
+height -2
+color1 .05 .2 .4
+color2 1 .8 .45
+specular .06 .06 .06
+
+Light
+center -2 2.5 -.5
+radius .25
+
+Light
+center 2 2.5 -.5
+radius .25
+
+Light
+center 0 3.5 -.5
+radius .25
+
+Sphere
+center 0 -1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center 0 1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center 2 -1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center 2 0 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center 2 1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center -2 -1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center -2 0 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+Sphere
+center -2 1.25 2
+radius .5
+color .545 0 0
+specular .6 .2 .2
+
+
+
+
+
+Sphere
+center 0 -1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center 0 1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center 2 -1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center 2 0 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center 2 1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center -2 -1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center -2 0 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+Sphere
+center -2 1.25 4
+radius .5
+color .545 0 0
+specular .2 .6 .2
+
+
+
+
+
+
+Sphere
+center 0 -1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center 0 1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center 2 -1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center 2 0 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center 2 1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center -2 -1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center -2 0 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+
+Sphere
+center -2 1.25 6
+radius .5
+color .545 0 0
+specular .2 .2 .6
+

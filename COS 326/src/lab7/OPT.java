@@ -20,7 +20,7 @@ public class OPT extends ReplacementAlgorithm {
 		nextPg = 0;
 		numFaults = 0;
 		
-		seq = new ArrayList<>();
+		seq = new ArrayList<Integer>();
 		for (int i = 0; i < refStr.length; i++) {
 			seq.add(refStr[i]);
 		}

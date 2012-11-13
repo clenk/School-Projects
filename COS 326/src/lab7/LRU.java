@@ -1,15 +1,13 @@
 package lab7;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 // Christopher Lenk for COS 326
 
 public class LRU extends ReplacementAlgorithm {
 	private int[] table;
 	private int nextPg; // The next page to be replaced, if a new insert requires it
 	private int numFaults;
-	private Date[] clocks; // Sequence of pages
+	private int[] clocks; // Sequence of pages
+	private int clock; // Logical clock ticks 
 
 	// Constructor
 	public LRU(int pageFrameCount, int[] refStr) {
@@ -20,7 +18,8 @@ public class LRU extends ReplacementAlgorithm {
 		}
 		nextPg = 0;
 		numFaults = 0;
-		clocks = new Date[pageFrameCount];
+		clocks = new int[pageFrameCount];
+		clock = 0;
 	}
 	
 	// Returns the number of page faults that have occured so far
@@ -49,11 +48,13 @@ public class LRU extends ReplacementAlgorithm {
 				return;
 			}
 		}
+
+		for (int i = 0; i < clocks.length; i++) {
+			System.out.println(clocks[i]);
+		}
 		
-		Date currentTime = new Date();
-		for (int i = 0; i < table.length; i++) {
-			if (clocks[i].before(currentTime)) {
-				currentTime = clocks[i];
+		for (int i = 1; i < clocks.length; i++) {
+			if (clocks[i] < clocks[curHighest]) {
 				curHighest = i;
 			}
 		}
@@ -63,7 +64,9 @@ public class LRU extends ReplacementAlgorithm {
 
 	// Insert a new page using the OPT algorithm
 	@Override
-	public void insert(int pageNumber) {
+	public void insert(int pageNumber) {		
+		clock++; // Update the clock
+		
 		// Check if there's a page fault
 		boolean pf = !isIn(pageNumber);
 		
@@ -71,12 +74,12 @@ public class LRU extends ReplacementAlgorithm {
 			// Insert the page into the table and up the page fault count
 			setNextPg();
 			table[nextPg] = pageNumber;
-			clocks[nextPg] = new Date();
+			clocks[nextPg] = clock;
 			numFaults++;
-		} else { // If it's already in the page table, update the 
+		} else { // If it's already in the page table, update the clock
 			for (int i = 0; i < table.length; i++) {
 				if (table[i] == pageNumber) {
-					clocks[i] = new Date();
+					clocks[i] = clock;
 				}
 			}
 		}

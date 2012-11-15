@@ -48,10 +48,6 @@ public class LRU extends ReplacementAlgorithm {
 				return;
 			}
 		}
-
-		for (int i = 0; i < clocks.length; i++) {
-			System.out.println(clocks[i]);
-		}
 		
 		for (int i = 1; i < clocks.length; i++) {
 			if (clocks[i] < clocks[curHighest]) {
